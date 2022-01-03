@@ -589,3 +589,13 @@ body {
   text-shadow: 0 0 0.3em hsla(345, 100%, 60%, 1), 0 0 0.9em var(--clr-neon-red);
   -webkit-text-stroke: 1px rgba(255, 255, 255, 0.7);
 }
+
+.websiteborder {
+  border: 1px solid red;
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: calc(100vw + 2px);
+  height: calc(100vh + 2px);
+  z-index: 3;
+}
