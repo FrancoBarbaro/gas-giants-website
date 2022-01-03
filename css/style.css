@@ -1,0 +1,591 @@
+body {
+  width: 960px;
+  margin: 0px auto;
+  /* background defined in stars div because otherwise the zooming effect is
+  not possible and the background-cover property behaves strangely */
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  height: 100vh;
+  z-index: 2;
+}
+
+.header {
+  height: 85px;
+  padding-top: 50px;
+}
+
+.header#formpageheader {
+  padding-bottom: 20px;
+}
+
+.footer#formpagefooter {
+  padding-top: 135px;
+}
+
+.main {
+  height: 450px;
+}
+
+.footer {
+  height: 25px;
+  color: #b4b4b4;
+  width: 100%;
+  text-align: center;
+  padding-top: 155px;
+}
+
+.navtable {
+  font-family: "Varela Round", sans-serif, serif;
+  font-size: 16px;
+  width: 100%;
+}
+
+.navtable th {
+  width: 20%;
+}
+
+.navtable a:link {
+  text-decoration: none;
+  color: #561be0;
+  background-color: #ffffff;
+  padding: 12px 25px;
+  font-weight: 700;
+  box-shadow: 10px 10px 0px #561be0;
+  transition: all 0.5s;
+  border-radius: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  letter-spacing: 1.2px;
+}
+
+.navtable a:visited {
+  text-decoration: none;
+  color: #561be0;
+  background-color: #ffffff;
+  padding: 12px 25px;
+  font-weight: 700;
+  box-shadow: 10px 10px 0px #561be0;
+  transition: all 0.5s;
+  border-radius: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  letter-spacing: 1.2px;
+}
+
+.navtable a:hover,
+.navtable a:focus {
+  text-decoration: none;
+  background-color: #561be0;
+  box-shadow: -10px -10px 0px #ffffff;
+  color: #ffffff;
+  transform: translate(10px, 10px);
+}
+
+.navtable a:active {
+  text-decoration: none;
+  background-color: #561be0;
+  box-shadow: -10px -10px 0px #ffffff;
+  color: #ffffff;
+  transform: translate(10px, 10px);
+}
+
+.pushleft {
+  position: relative;
+  right: 75px;
+}
+
+.pushright {
+  position: relative;
+  left: 75px;
+}
+
+.footerbox {
+  border-radius: 15px;
+  padding: 5px 1px;
+  background-color: #343d52;
+  border: 2px solid #242a38;
+}
+
+.tall {
+  height: 100px;
+}
+
+.split50 {
+  float: left;
+  width: 50%;
+}
+
+.clearfloat {
+  clear: both;
+}
+
+.gradientlink:link {
+  color: inherit;
+  text-decoration: none;
+  background-image: linear-gradient(90deg, magenta, blue);
+  background-size: 0% 3px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  transition: 0.3s ease;
+}
+
+.gradientlink:visited {
+  color: inherit;
+}
+
+.gradientlink:active {
+  color: #9b6bf3;
+}
+
+.gradientlink:hover,
+.gradientlink:focus {
+  background-size: 100% 3px;
+}
+
+.flipcard {
+  background-color: transparent;
+  width: 480px;
+  height: 274px;
+  overflow: hidden;
+  border-radius: 15px;
+  perspective: 10000px;
+}
+
+.flipcard {
+  height: 219px;
+}
+
+.flipcard#interiors {
+  height: 274px;
+}
+
+.flipcardinner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.7s;
+  transform-style: preserve-3d;
+}
+
+.flipcard:hover .flipcardinner {
+  transform: rotateY(180deg);
+}
+
+.flipcardfront,
+.flipcardback {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* for safari */
+  backface-visibility: hidden;
+}
+
+.flipcardfront {
+  background-color: #bbb;
+  color: black;
+}
+
+.flipcardback {
+  padding: 12% 0%;
+  background-color: #161a20;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.flipcardback h3 {
+  font-size: 20px;
+  color: #2988e0;
+}
+
+.flipcardback a:link,
+.flipcardback a:visited {
+  color: #55c5e7;
+}
+
+#video {
+  background-color: black;
+  overflow: hidden;
+  border-radius: 15px;
+  display: grid;
+  place-items: center;
+}
+
+.inroundedbox {
+  width: fit-content;
+  background-color: #ffffff;
+  padding: 12px 25px;
+  border-radius: 15px;
+}
+
+.inroundedbox#header1 {
+  font-family: "Patua One", cursive, fantasy;
+  font-size: 32px;
+  width: fit-content;
+  color: #2d3e50;
+  background-color: #ffffff;
+  padding: 12px 25px;
+  border-radius: 15px;
+}
+
+.inroundedbox#header2 {
+  font-family: "Patua One", cursive, fantasy;
+  font-size: 24px;
+  width: fit-content;
+  color: #2d3e50;
+  background-color: #ffffff;
+  padding: 12px 25px;
+  border-radius: 15px;
+}
+
+.inroundedbox#paragraph {
+  width: fit-content;
+  color: #561be0;
+  background-color: #ffffff;
+  padding: 12px 25px;
+  border-radius: 15px;
+  font-size: 18px;
+}
+
+.inroundedbox#list {
+  width: 430px;
+  color: #561be0;
+  background-color: #ffffff;
+  padding: 12px 25px;
+  border-radius: 15px;
+  font-size: 18px;
+}
+
+.main table {
+  width: 480px;
+  height: 162px;
+  margin-top: 30px;
+  /* collapsing the border messes up the rounded corners, so i used this trick instead */
+  border-collapse: separate;
+  border-spacing: 0px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.main form {
+  margin: 0px auto;
+  border-radius: 5px;
+  color: #f5dae7;
+}
+
+.feedback {
+  width: 500px;
+  background-color: #3f1be0;
+  border: 1px solid black;
+  font-family: monospace;
+  font-size: 13px;
+  margin: 25px 0px 0px 25px;
+}
+
+.feedback legend {
+  font-size: 16px;
+}
+
+.name {
+  width: 100px;
+  text-align: right;
+  padding: 5px;
+  margin-right: 20px;
+  float: left;
+}
+
+.tall {
+  height: 60px;
+  padding-top: 34px;
+}
+
+.data {
+  text-align: left;
+  padding: 5px;
+}
+
+.button {
+  text-align: center;
+  padding: 15px 0px;
+}
+
+.main caption {
+  color: magenta;
+  font-weight: bold;
+  text-align: left;
+  position: relative;
+  left: 20px;
+  font-size: 16px;
+}
+
+.main table caption a {
+  font-style: oblique;
+}
+
+.main tr {
+  background-color: #613aec;
+}
+
+.main td {
+  font-family: "Space Mono", monospace, serif;
+  font-size: 13px;
+  text-align: center;
+}
+
+.main th:first-of-type {
+  border-top-left-radius: 10px;
+}
+
+.main th:last-of-type {
+  border-top-right-radius: 10px;
+}
+
+.main tr:last-of-type td:first-of-type {
+  border-bottom-left-radius: 10px;
+}
+
+.main tr:last-of-type td:last-of-type {
+  border-bottom-right-radius: 10px;
+}
+
+.stars {
+  z-index: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  background-color: #003b59;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  animation: zoom 30s linear infinite;
+}
+
+/* background image is set according to which tag the stars div has */
+
+.stars#index {
+  background-image: url("../images/indexbg.jpeg");
+}
+
+.stars#jupiter {
+  background-image: url("../images/jupiterbg.jpeg");
+}
+
+.stars#saturn {
+  background-image: url("../images/saturnbg.jpeg");
+}
+
+.stars#uranus {
+  background-image: url("../images/uranusbg.jpeg");
+}
+
+.stars#neptune {
+  background-image: url("../images/neptunebg.jpeg");
+}
+
+.stars#feedback {
+  background-image: url("../images/feedbackbg.jpeg");
+}
+
+/* animation of background zooming in and out */
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* the span acts as the star's head */
+.stars span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 4px;
+  height: 4px;
+  background: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1),
+    0 0 0 8px rgba(255, 255, 255, 0.1), 0 0 0 6px rgba(255, 255, 255, 1);
+  animation: animate 5s linear infinite;
+}
+
+/* this pseudo-element acts as the star's head */
+.stars span::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 400px;
+  height: 1px;
+  background: linear-gradient(90deg, #ffffff, transparent);
+  transform: translateY(-50%);
+}
+
+/* animation of the stars flying across the screen */
+@keyframes animate {
+  0% {
+    transform: rotate(315deg) translateX(0px);
+  }
+  100% {
+    transform: rotate(315deg) translateX(-1000px);
+    opacity: 0;
+  }
+}
+
+.stars span:nth-child(1) {
+  top: -10px;
+  right: -10px;
+  left: initial;
+  animation-delay: 0s;
+  animation-duration: 1s;
+}
+
+.stars span:nth-child(2) {
+  top: -10px;
+  right: 70px;
+  left: initial;
+  animation-delay: 0.2s;
+  animation-duration: 3s;
+}
+
+.stars span:nth-child(3) {
+  top: 70px;
+  right: -10px;
+  left: initial;
+  animation-delay: 0.4s;
+  animation-duration: 2s;
+}
+
+.stars span:nth-child(4) {
+  top: -10px;
+  right: 170px;
+  left: initial;
+  animation-delay: 0.6s;
+  animation-duration: 1.9s;
+}
+
+.stars span:nth-child(5) {
+  top: -10px;
+  right: 390px;
+  left: initial;
+  animation-delay: 0.8s;
+  animation-duration: 2.5s;
+}
+
+.stars span:nth-child(6) {
+  top: -10px;
+  right: 490px;
+  left: initial;
+  animation-delay: 4s;
+  animation-duration: 3.2s;
+}
+
+.stars span:nth-child(7) {
+  top: -10px;
+  right: 590px;
+  left: initial;
+  animation-delay: 1s;
+  animation-duration: 3s;
+}
+
+.stars span:nth-child(8) {
+  top: -10px;
+  right: 790px;
+  left: initial;
+  animation-delay: 3s;
+  animation-duration: 1.2s;
+}
+
+.stars span:nth-child(9) {
+  top: -10px;
+  right: 960px;
+  left: initial;
+  animation-delay: 1s;
+  animation-duration: 4s;
+}
+
+.stars span:nth-child(10) {
+  top: -10px;
+  right: 1090px;
+  left: initial;
+  animation-delay: 2s;
+  animation-duration: 3s;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.hide {
+  display: none;
+}
+
+:root {
+  --clr-neon-pink: hsl(317, 100%, 54%);
+  --clr-neon-red: hsl(345, 100%, 54%);
+  --clr-bg: hsl(323, 21%, 16%);
+}
+
+.leftrunes {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -15px;
+  z-index: 2;
+}
+
+.rightrunes {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -15px;
+  z-index: 2;
+}
+
+.rune {
+  text-align: center;
+  font-size: 4rem;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  color: transparent;
+  text-shadow: 0 0 0.125em hsla(0, 0%, 100%, 0.2), 0 0 0.45em var(--clr-bg);
+  transition: color 0.7s linear, text-shadow 0.7s linear;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
+  margin: 0.25em 1em;
+  border-radius: 0.25em;
+  position: relative;
+}
+
+.rune:nth-child(odd) {
+  margin-bottom: 125px;
+}
+
+.rune:nth-child(even) {
+  margin-top: 125px;
+}
+
+.rune:hover,
+.rune:focus {
+  color: var(--clr-neon-pink);
+  text-shadow: 0 0 0.3em hsla(317, 100%, 60%, 1), 0 0 0.9em var(--clr-neon-pink);
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+}
+
+.rune:active {
+  color: var(--clr-neon-red);
+  text-shadow: 0 0 0.3em hsla(345, 100%, 60%, 1), 0 0 0.9em var(--clr-neon-red);
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.7);
+}

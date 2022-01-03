@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Feedback</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Patua+One&family=Space+Mono&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header" id="formpageheader">
+        <table class="navtable">
+          <tr>
+            <th><a href="index.html">Home</a></th>
+            <th><a href="jupiter.html">Jupiter</a></th>
+            <th><a href="saturn.html">Saturn</a></th>
+            <th><a href="uranus.html">Uranus</a></th>
+            <th><a href="neptune.html">Neptune</a></th>
+          </tr>
+        </table>
+      </div>
+      <div class="main">
+        <form action="index.html" method="post" class="feedback">
+          <fieldset>
+            <legend>Give Us Your Feedback</legend>
+            <div class="name">Email:</div>
+            <div class="data">
+              <input type="text" name="email" size="40" />
+            </div>
+
+            <div class="clearfloat"></div>
+
+            <div class="name tall" style="position: relative; bottom: 11px">
+              Did you<br />like this website:
+            </div>
+            <div class="data" style="position: relative; top: 12px">
+              <input type="radio" name="liked" value="yes" />Yes<br />
+              <input type="radio" name="liked" value="no" />No<br />
+              <input type="radio" name="liked" value="indifferent" />Idk
+            </div>
+
+            <div class="clearfloat"></div>
+
+            <div class="name" style="position: relative; bottom: 5px">
+              Occupation:
+            </div>
+            <div class="data" style="position: relative; bottom: 5px">
+              <select name="occupation">
+                <option hidden disabled selected value>
+                  -- Select an option --
+                </option>
+                <option value="teacher">Teacher</option>
+                <option value="student">Student</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="clearfloat"></div>
+
+            <div class="name tall">Favorite Gas Giants:</div>
+            <div class="data" style="position: relative; top: 5px">
+              <input
+                type="checkbox"
+                name="favorite"
+                value="jupiter"
+              />Jupiter<br />
+              <input
+                type="checkbox"
+                name="favorite"
+                value="saturn"
+              />Saturn<br />
+              <input
+                type="checkbox"
+                name="favorite"
+                value="uranus"
+              />Uranus<br />
+              <input type="checkbox" name="favorite" value="neptune" />Neptune
+            </div>
+
+            <div class="clearfloat"></div>
+
+            <div class="name tall" style="position: relative; bottom: 25px">
+              Additional Comments:
+            </div>
+            <div class="data">
+              <textarea name="more" cols="30" rows="8" style="resize: none">
+Suggest a way that the site may be improved.</textarea
+              >
+            </div>
+
+            <div class="clearfloat"></div>
+            <div class="button">
+              <input type="submit" value="Click Here to Submit" />
+            </div>
+          </fieldset>
+        </form>
+      </div>
+      <div class="footer" id="formpagefooter">
+        <div class="footerbox">
+          <div class="split50">
+            &copy; Franco Barbaro 2021. All Rights Reserved.
+          </div>
+          <div class="split50">
+            <a href="feedback.html" class="gradientlink">Feedback</a>
+          </div>
+          <div class="clearfloat"></div>
+        </div>
+      </div>
+    </div>
+    <!-- stars div will have an different id for each page, that dictates what the backrgound image is -->
+    <div class="stars" id="feedback">
+      <!-- each span is a shooting star object -->
+      <!-- instead of styling the individual stars by giving each one a class or id, i
+      used the nth-child attribute in the stylesheet -->
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="leftrunes">
+      <a href="jupiter.html" class="rune">&#9795;</a>
+      <a href="saturn.html" class="rune">&#9796;</a>
+    </div>
+    <div class="rightrunes">
+      <a href="uranus.html" class="rune">&#9954;</a>
+      <a href="neptune.html" class="rune">&#9798;</a>
+    </div>
+  </body>
+</html>

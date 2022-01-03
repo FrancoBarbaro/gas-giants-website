@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Neptune</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Patua+One&family=Space+Mono&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">
+        <table class="navtable">
+          <tr>
+            <th><a href="index.html">Home</a></th>
+            <th><a href="jupiter.html">Jupiter</a></th>
+            <th><a href="saturn.html">Saturn</a></th>
+            <th><a href="uranus.html">Uranus</a></th>
+            <th><a href="neptune.html">Neptune</a></th>
+          </tr>
+        </table>
+      </div>
+      <div class="main">
+        <!-- the class split50 splits the screen in half and displays two items side by side -->
+        <div class="split50 pushleft">
+          <h1 class="inroundedbox" id="header1">About Neptune:</h1>
+          <p class="inroundedbox" id="paragraph">
+            Neptune is the fourth largest and the farthest planet of the Solar
+            System with the most powerful wind speeds out of all the planets. It
+            is the smallest of the gas giants and is the first planet to be
+            discovered by mathematical predictions in 1846. It is named after
+            the Roman god of the sea. In contrast to the hazy, relatively
+            featureless atmosphere of Uranus, Neptune's atmosphere has active
+            and visible weather patterns. For example, at the time of the
+            Voyager 2 flyby in 1989, the planet's southern hemisphere had a
+            Great Dark Spot comparable to the Great Red Spot on Jupiter.
+          </p>
+          <br />
+          <h2 class="inroundedbox" id="header">Symbol:</h2>
+          <p class="inroundedbox" id="paragraph">
+            Neptune's symbol looks like this: &#9798;. It the trident (long
+            three-pronged fork or weapon) of Neptune, god of the sea.
+          </p>
+        </div>
+        <div class="split50 pushright">
+          <h2 class="inroundedbox" id="header2">Fun Facts:</h2>
+          <ul class="inroundedbox" id="list">
+            <li>Neptune has 6 faint rings</li>
+            <li>Neptune is 30 times farther from the Sun than Earth is</li>
+            <li>It takes Neptune about 165 Earth years to orbit the sun</li>
+            <li>
+              The temperature on neptune has been measured to be about
+              -373&deg;F
+            </li>
+            <li>Neptune has 14 moons.</li>
+            <li>Only one spacecraft, Voyager 2, has ever flown by Neptune.</li>
+          </ul>
+          <br />
+          <div class="flipcard">
+            <div class="flipcardinner">
+              <div class="flipcardfront">
+                <img
+                  src="images/greatdarkspot.jpeg"
+                  alt="close-up picture of Neptune's Great Dark Spot"
+                />
+              </div>
+              <div class="flipcardback">
+                <h3>
+                  A closer look at Neptune's Great Dark Spot,<br />taken by
+                  NASA's
+                  <a
+                    href="https://solarsystem.nasa.gov/missions/voyager-2/in-depth/"
+                    target="_blank"
+                    class="gradientlink"
+                    >Voyager 2 space probe</a
+                  >
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="clearfloat"></div>
+      </div>
+      <div class="footer">
+        <div class="footerbox">
+          <div class="split50">
+            &copy; Franco Barbaro 2021. All Rights Reserved.
+          </div>
+          <div class="split50">
+            <a href="feedback.html" class="gradientlink">Feedback</a>
+          </div>
+          <div class="clearfloat"></div>
+        </div>
+      </div>
+    </div>
+    <!-- stars div will have an different id for each page, that dictates what the backrgound image is -->
+    <div class="stars" id="neptune">
+      <!-- each span is a shooting star object -->
+      <!-- instead of styling the individual stars by giving each one a class or id, i
+      used the nth-child attribute in the stylesheet -->
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="leftrunes">
+      <a href="jupiter.html" class="rune">&#9795;</a>
+      <a href="saturn.html" class="rune">&#9796;</a>
+    </div>
+    <div class="rightrunes">
+      <a href="uranus.html" class="rune">&#9954;</a>
+      <a href="neptune.html" class="rune">&#9798;</a>
+    </div>
+  </body>
+</html>

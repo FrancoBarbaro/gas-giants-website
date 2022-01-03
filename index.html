@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>The Gas Giants</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Patua+One&family=Space+Mono&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">
+        <table class="navtable">
+          <tr>
+            <th><a href="index.html">Home</a></th>
+            <th><a href="jupiter.html">Jupiter</a></th>
+            <th><a href="saturn.html">Saturn</a></th>
+            <th><a href="uranus.html">Uranus</a></th>
+            <th><a href="neptune.html">Neptune</a></th>
+          </tr>
+        </table>
+      </div>
+      <div class="main">
+        <!-- the class split50 splits the screen in half and displays two items side by side -->
+        <div class="split50 pushleft">
+          <h1 class="inroundedbox" id="header1">What is a Gas Giant?</h1>
+          <p class="inroundedbox fs" id="paragraph">
+            A gas giant is a large planet mostly composed of helium and/or
+            hydrogen. They don't have hard surfaces and instead have swirling
+            gases above a solid core. There are four gas giants in our solar
+            system: Jupiter, Saturn, Uranus, and Neptune.
+            <br />
+            <br />
+            <a
+              href="https://exoplanets.nasa.gov/what-is-an-exoplanet/planet-types/gas-giant/"
+              target="_blank"
+              class="gradientlink"
+              >Click here for more information about the Gas Giants.</a
+            >
+          </p>
+          <div id="video">
+            <iframe
+              width="480"
+              height="270"
+              src="https://www.youtube.com/embed/FOkX5tP3sK4"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div class="split50 pushright">
+          <h2 class="inroundedbox" id="header2">Additional Information:</h2>
+          <table border="1">
+            <caption>
+              Statistics from
+              <a
+                href="https://space-facts.com/gas-giants#tablepress-gas-giants"
+                target="_blank"
+                class="gradientlink"
+                >space-facts.com</a
+              >
+            </caption>
+            <tr>
+              <th>Name</th>
+              <th>Diameter</th>
+              <th>Distance from Sun</th>
+            </tr>
+            <tr>
+              <td>Jupiter</td>
+              <td>139,822 km</td>
+              <td>778,340,821 km</td>
+            </tr>
+            <tr>
+              <td>Saturn</td>
+              <td>116,464 km</td>
+              <td>1,426,666,422 km</td>
+            </tr>
+            <tr>
+              <td>Uranus</td>
+              <td>50,724 km</td>
+              <td>2,870,658,186 km</td>
+            </tr>
+            <tr>
+              <td>Neptune</td>
+              <td>49,244 km</td>
+              <td>4,498,396,441 km</td>
+            </tr>
+          </table>
+          <br />
+          <div class="flipcard" id="interiors">
+            <div class="flipcardinner">
+              <div class="flipcardfront">
+                <img
+                  src="images/interiors.jpeg"
+                  alt="shows of the gas giants"
+                />
+              </div>
+              <div class="flipcardback">
+                <h3>What the interior of each gas planet is made up of</h3>
+                <br />
+                <a
+                  href="https://solarsystem.nasa.gov/resources/677/gas-giant-interiors-2003/"
+                  target="_blank"
+                  class="gradientlink"
+                  >Click here to visit NASA's page about the interiors of the
+                  Gas Giants.</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="clearfloat"></div>
+      </div>
+      <div class="footer">
+        <div class="footerbox">
+          <div class="split50">
+            &copy; Franco Barbaro 2021. All Rights Reserved.
+          </div>
+          <div class="split50">
+            <a href="feedback.html" class="gradientlink">Feedback</a>
+          </div>
+          <div class="clearfloat"></div>
+        </div>
+      </div>
+    </div>
+    <!-- stars div will have an different id for each page, that dictates what the backrgound image is -->
+    <div class="stars" id="index">
+      <!-- each span is a shooting star object -->
+      <!-- instead of styling the individual stars by giving each one a class or id, i
+      used the nth-child attribute in the stylesheet -->
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="leftrunes">
+      <a href="jupiter.html" class="rune">&#9795;</a>
+      <a href="saturn.html" class="rune">&#9796;</a>
+    </div>
+    <div class="rightrunes">
+      <a href="uranus.html" class="rune">&#9954;</a>
+      <a href="neptune.html" class="rune">&#9798;</a>
+    </div>
+  </body>
+</html>

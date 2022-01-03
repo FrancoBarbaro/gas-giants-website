@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Jupiter</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Patua+One&family=Space+Mono&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">
+        <table class="navtable">
+          <tr>
+            <th><a href="index.html">Home</a></th>
+            <th><a href="jupiter.html">Jupiter</a></th>
+            <th><a href="saturn.html">Saturn</a></th>
+            <th><a href="uranus.html">Uranus</a></th>
+            <th><a href="neptune.html">Neptune</a></th>
+          </tr>
+        </table>
+      </div>
+      <div class="main">
+        <!-- the class split50 splits the screen in half and displays two items side by side -->
+        <div class="split50 pushleft">
+          <h1 class="inroundedbox" id="header1">About Jupiter:</h1>
+          <p class="inroundedbox" id="paragraph">
+            Jupiter is the fifth planet from the Sun and the largest in the
+            Solar System. It is the most massive planet in our solar system by
+            far, having a mass over two and a half times that of all the other
+            planets in the Solar System combined. It is the third-brightest
+            natural object in the Earth's night sky after the Moon and Venus and
+            has been observed since pre-historic times. It is named after the
+            Roman god Jupiter, the king of the gods, because of its observed
+            size.
+          </p>
+          <br />
+          <h2 class="inroundedbox" id="header">Symbol:</h2>
+          <p class="inroundedbox" id="paragraph">
+            Jupiter's symbol looks like this: &#9795;. It is said to represent a
+            hieroglyph of the eagle, Jove's bird, or to be the initial letter of
+            Zeus with a line drawn through it to indicate its abbreviation.
+          </p>
+        </div>
+        <div class="split50 pushright">
+          <h2 class="inroundedbox" id="header2">Fun Facts:</h2>
+          <ul class="inroundedbox" id="list">
+            <li>Jupiter has more than 75 moons</li>
+            <li>
+              Jupiter has a faint ring system, its rings were discovered it in
+              the 1979 the Voyager mission
+            </li>
+            <li>
+              Jupiter's Great Red Spot is a gigantic storm that’s about twice
+              the size of Earth and has raged for over a century.
+            </li>
+            <li>
+              Jupiter cannot support life as we know it. But some of Jupiter's
+              moons have oceans beneath their crusts that might support life.
+            </li>
+          </ul>
+          <br />
+          <div class="flipcard">
+            <div class="flipcardinner">
+              <div class="flipcardfront">
+                <img
+                  src="images/greatredspot.jpeg"
+                  alt="close-up picture of Jupiter's Great Red Spot"
+                />
+              </div>
+              <div class="flipcardback">
+                <h3>
+                  A closer look at Jupiter's Great Red Spot,<br />taken by
+                  NASA's
+                  <a
+                    href="https://www.nasa.gov/mission_pages/juno/main/index.html"
+                    target="_blank"
+                    class="gradientlink"
+                    >Juno space probe</a
+                  >
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="clearfloat"></div>
+      </div>
+      <div class="footer">
+        <div class="footerbox">
+          <div class="split50">
+            &copy; Franco Barbaro 2021. All Rights Reserved.
+          </div>
+          <div class="split50">
+            <a href="feedback.html" class="gradientlink">Feedback</a>
+          </div>
+          <div class="clearfloat"></div>
+        </div>
+      </div>
+    </div>
+    <!-- stars div will have an different id for each page, that dictates what the backrgound image is -->
+    <div class="stars" id="jupiter">
+      <!-- each span is a shooting star object -->
+      <!-- instead of styling the individual stars by giving each one a class or id, i
+      used the nth-child attribute in the stylesheet -->
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="leftrunes">
+      <a href="jupiter.html" class="rune">&#9795;</a>
+      <a href="saturn.html" class="rune">&#9796;</a>
+    </div>
+    <div class="rightrunes">
+      <a href="uranus.html" class="rune">&#9954;</a>
+      <a href="neptune.html" class="rune">&#9798;</a>
+    </div>
+  </body>
+</html>

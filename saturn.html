@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Saturn</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Patua+One&family=Space+Mono&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">
+        <table class="navtable">
+          <tr>
+            <th><a href="index.html">Home</a></th>
+            <th><a href="jupiter.html">Jupiter</a></th>
+            <th><a href="saturn.html">Saturn</a></th>
+            <th><a href="uranus.html">Uranus</a></th>
+            <th><a href="neptune.html">Neptune</a></th>
+          </tr>
+        </table>
+      </div>
+      <div class="main">
+        <!-- the class split50 splits the screen in half and displays two items side by side -->
+        <div class="split50 pushleft">
+          <h1 class="inroundedbox" id="header1">About Saturn:</h1>
+          <p class="inroundedbox" id="paragraph">
+            Saturn is the sixth planet from the Sun and the second-largest
+            planet in our solar system. It is named after the Roman god of
+            wealth and agriculture. The planet's most famous feature is its
+            prominent ring system, which is composed mostly of ice particles,
+            with a smaller amount of rocky debris and dust. At least 83 moons
+            are known to orbit Saturn, of which 53 are officially named; this
+            does not include the hundreds of moonlets in its rings. It is one
+            eighth as dense as earth but over 95 times more massive.
+          </p>
+          <br />
+          <h2 class="inroundedbox" id="header">Symbol:</h2>
+          <p class="inroundedbox" id="paragraph">
+            Saturn's symbol looks like this: &#9796;. It is thought to be an
+            ancient scythe or sickel, as Saturn was the god of seed-sowing and
+            also of time.
+          </p>
+        </div>
+        <div class="split50 pushright">
+          <h2 class="inroundedbox" id="header2">Fun Facts:</h2>
+          <ul class="inroundedbox" id="list">
+            <li>
+              Nine Earths side by side would almost span Saturn’s diameter not
+              including it's rings
+            </li>
+            <li>It takes Saturn about 29 Earth years to orbit the sun</li>
+            <li>
+              Saturn is the most distant planet that can be seen with the naked
+              eye
+            </li>
+            <li>
+              About two tons of Saturn’s mass came from Earth—the Cassini
+              spacecraft was intentionally vaporized in Saturn’s atmosphere in
+              2017
+            </li>
+          </ul>
+          <br />
+          <div class="flipcard">
+            <div class="flipcardinner">
+              <div class="flipcardfront">
+                <img
+                  src="images/saturnrings.jpeg"
+                  alt="picture of Saturn's rings"
+                />
+              </div>
+              <div class="flipcardback">
+                <h3>
+                  Image taken by NASA's
+                  <a
+                    href="https://www.nasa.gov/mission_pages/cassini/main/index.html"
+                    target="_blank"
+                    class="gradientlink"
+                    >Cassini spacecraft</a
+                  >
+                  when<br />it slipped into saturn's shadow in 2013
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="clearfloat"></div>
+      </div>
+      <div class="footer">
+        <div class="footerbox">
+          <div class="split50">
+            &copy; Franco Barbaro 2021. All Rights Reserved.
+          </div>
+          <div class="split50">
+            <a href="feedback.html" class="gradientlink">Feedback</a>
+          </div>
+          <div class="clearfloat"></div>
+        </div>
+      </div>
+    </div>
+    <!-- stars div will have an different id for each page, that dictates what the backrgound image is -->
+    <div class="stars" id="saturn">
+      <!-- each span is a shooting star object -->
+      <!-- instead of styling the individual stars by giving each one a class or id, i
+      used the nth-child attribute in the stylesheet -->
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="leftrunes">
+      <a href="jupiter.html" class="rune">&#9795;</a>
+      <a href="saturn.html" class="rune">&#9796;</a>
+    </div>
+    <div class="rightrunes">
+      <a href="uranus.html" class="rune">&#9954;</a>
+      <a href="neptune.html" class="rune">&#9798;</a>
+    </div>
+  </body>
+</html>
